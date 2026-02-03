@@ -55,8 +55,16 @@
     .mainmenu {
         display: none;
     }
+
+    .mobilenav {
+        display: block;
+    }
 }
 
-@media (max-width:576px) {}
+@media (max-width:576px) {
+    .top-header {
+        display: none;
+    }
+}
 
 @media (max-width:360px) {}

@@ -1,4 +1,7 @@
-.mobilenav {}
+.mobilenav {
+    display: none;
+    padding: 12px;
+}
 
 .mobilenav__wrapper {
     display: flex;
@@ -10,6 +13,7 @@
 .nav__toggle-icon {
     width: 32px;
     height: 32px;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
