@@ -1,3 +1,5 @@
+import { toggleMenu } from "./MobileMenu.js";
+
 export function renderMobileNav() {
     // Get Elements
     const header = document.querySelector("header");
@@ -51,18 +53,19 @@ export function renderMobileNav() {
     navToggleIcon.appendChild(navToggleLine);
 
     mobileSearchBox.appendChild(mobileSearchInput);
+    mobileSearchBox.appendChild(mobilePlaceholderText);
+    mobileSearchBox.appendChild(mobilePlaceholderIcon);
     mobileSearchBox.appendChild(mobileSearchIcon);
 
-    mobileSearchInput.appendChild(mobilePlaceholderText);
-    mobileSearchInput.appendChild(mobilePlaceholderIcon);
 
     mobileNavLogo.appendChild(mobileNavLogoImg);
+}
 
+// Menu Controller
+export function initNav() {
+    const btn = document.querySelector(".nav__toggle-icon");
 
-    // Event Listener
-    navToggleIcon.addEventListener('click', function () {
-        this.classList.toggle('nav__toggle-icon--open');
-        menu.classList.toggle('menu--open');
+    btn.addEventListener('click', () => {
+        toggleMenu();
     });
-
 }

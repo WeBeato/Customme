@@ -1,7 +1,11 @@
 import { renderNavbar } from "./components/Navbar.js";
-import { renderMainMenu } from "./components/MainMenu.js";
-import { renderMobileNav } from "./components/MobileNav.js";
+import { renderDesktopMenu } from "./components/DesktopMenu.js";
+import { initNav, renderMobileNav } from "./components/MobileNav.js";
+import { initMenu, renderMobileMenu } from "./components/MobileMenu.js";
 
 renderNavbar();
-renderMainMenu();
+renderDesktopMenu();
 renderMobileNav();
+renderMobileMenu();
+initMenu();
+initNav();

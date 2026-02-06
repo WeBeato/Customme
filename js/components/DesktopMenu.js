@@ -1,4 +1,4 @@
-export function renderMainMenu() {
+export function renderDesktopMenu() {
     // Get Element
     const header = document.querySelector("header");
 
