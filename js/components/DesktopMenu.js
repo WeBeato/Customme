@@ -34,6 +34,7 @@ export function renderDesktopMenu() {
     menu.className = "menu";
 
     menuBtn.className = "menu__btn";
+    menuBtn.classList.add("primary-btn");
     menuBtn.textContent = "خودت طراحیش کن !";
     menuBtn.href = "#"
     menuBtnIcon.className = "menu__btn-icon";

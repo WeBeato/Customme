@@ -95,6 +95,44 @@ h6 {
     font-size: 18px;
 }
 
+/* Components */
+.primary-btn {
+    background-color: var(--Primary);
+    color: var(--Tint1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 4px;
+    width: 184px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background-color 200ms;
+}
+
+.primary-btn:hover {
+    background-color: var(--Shade6);
+}
+
+.second-btn {
+    width: 184px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Primary);
+    border: 1px solid var(--Primary);
+    border-radius: 8px;
+    background: transparent;
+    font-size: 14px;
+}
+
+.second-btn:hover {
+    color: var(--Shade6);
+    border-color: var(--Shade6);
+}
+
 /* App */
 html {
     box-sizing: border-box;
@@ -134,6 +172,7 @@ body {
     font-family: vazirmatn-regular;
     color: var(--Shade1);
     background-color: var(--tint1);
+    height: 3000px;
 }
 
 /* Grid */

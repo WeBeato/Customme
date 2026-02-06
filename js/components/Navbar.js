@@ -27,6 +27,7 @@ export function renderNavbar() {
     navWrapper.className = "nav__wrapper";
 
     navLogo.className = "nav__logo";
+    navLogo.href = "../index.html";
     navLogoImg.src = "../assets/images/logo.png";
 
     navSearchBox.className = "nav__search-box";

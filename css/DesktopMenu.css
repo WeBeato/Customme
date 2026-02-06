@@ -8,25 +8,6 @@
     justify-content: space-between;
 }
 
-.menu__btn {
-    background-color: var(--Primary);
-    color: var(--Tint1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row-reverse;
-    gap: 4px;
-    width: 185px;
-    height: 48px;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: background-color 200ms;
-}
-
-.menu__btn:hover {
-    background-color: var(--Shade6);
-}
-
 .menu__btn-icon {
     width: 24px;
     height: 24px;
