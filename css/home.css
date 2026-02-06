@@ -63,21 +63,18 @@
     justify-content: space-evenly;
 }
 
-.hero__design-btn {}
 
 .hero__btn-icon {
     width: 24px;
     height: 24px;
 }
 
-.hero__product-btn {}
 
 .hero__banner {
     width: 854px;
     height: 404px;
 }
 
-.hero__img {}
 
 .hero__object1,
 .hero__object2 {
@@ -98,6 +95,35 @@
     right: -185px;
     top: -75px;
     rotate: 12.12deg;
+}
+
+/* Categories Section */
+.categories {
+    margin-top: 64px;
+}
+
+.categories__title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.categories__title-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 975px;
+    height: 1px;
+    background-color: var(--Gray4);
+    left: 15px;
+}
+
+.categories__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.categories__title {
+    color: var(--Gray10);
 }
 
 @media (max-width:1400px) {}
@@ -147,6 +173,7 @@
         margin-right: auto;
         width: 50%;
     }
+
     .hero__buttons a {
         width: 250px;
     }
@@ -166,10 +193,11 @@
     .top-header {
         display: none;
     }
-    
+
     .hero__caption {
         width: 70%;
     }
+
     .hero__buttons a {
         width: 180px;
     }
@@ -179,20 +207,25 @@
     .hero__banner {
         height: 200px;
     }
+
     .hero__title {
         font-size: 18px;
     }
+
     .hero__content {
         width: 100%;
     }
+
     .hero__caption {
         width: 100%;
         font-size: 12px;
     }
+
     .hero__buttons a {
         width: 140px;
         font-size: 10px;
     }
+
     .hero__btn-icon {
         width: 16px;
         height: 16px;
@@ -203,6 +236,7 @@
     .hero__banner {
         height: 120px;
     }
+
     .hero__buttons a {
         width: 120px;
     }
