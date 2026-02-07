@@ -11,13 +11,13 @@ export function renderDesktopMenu() {
     const menu = document.createElement("ul");
 
     const menuItems = [
-        { lable: "پوشاک", type:"clothing" },
-        { lable: "لوازم خانه", type:"household-appliances" },
-        { lable: "قاب موبایل", type:"mobile-frame" },
-        { lable: "اکسسوری", type:"accessory" },
-        { lable: "مدرسه و اداره", type:"office" },
-        { lable: "کارت و پوستر", type:"card" },
-        { lable: "جشن و مهمانی", type:"party" }
+        { lable: "پوشاک", type: "clothing" },
+        { lable: "لوازم خانه", type: "household-appliances" },
+        { lable: "قاب موبایل", type: "mobile-frame" },
+        { lable: "اکسسوری", type: "accessory" },
+        { lable: "مدرسه و اداره", type: "office" },
+        { lable: "کارت و پوستر", type: "card" },
+        { lable: "جشن و مهمانی", type: "party" }
     ];
     menuItems.forEach(item => {
         const li = document.createElement("li");
@@ -38,7 +38,7 @@ export function renderDesktopMenu() {
     menuBtn.textContent = "خودت طراحیش کن !";
     menuBtn.href = "#"
     menuBtnIcon.className = "menu__btn-icon";
-    menuBtnIcon.src = "../assets/icons/magicpen.svg";
+    menuBtnIcon.src = "../../assets/icons/magicpen.svg";
 
 
     // Append Cheldren

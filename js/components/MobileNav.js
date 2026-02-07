@@ -37,13 +37,13 @@ export function renderMobileNav() {
     mobilePlaceholderText.textContent = "جستجو در";
     mobilePlaceholderIcon.className = "mobilenav__placeholder-icon";
     mobilePlaceholderIcon.id = "searchInputIcon";
-    mobilePlaceholderIcon.src = "../assets/icons/placeholder-icon.svg";
+    mobilePlaceholderIcon.src = "../../assets/icons/placeholder-icon.svg";
     mobileSearchIcon.className = "mobilenav__search-icon";
-    mobileSearchIcon.src = "../assets/icons/search-normal.svg";
+    mobileSearchIcon.src = "../../assets/icons/search-normal.svg";
 
     mobileNavLogo.className = "mobilenav__logo";
-    mobileNavLogo.href = "../index.html";
-    mobileNavLogoImg.src = "../assets/images/LOGO-Mobile.png";
+    mobileNavLogo.href = "../../index.html";
+    mobileNavLogoImg.src = "../../assets/images/LOGO-Mobile.png";
 
     // Append Children
     header.appendChild(mobileNav);

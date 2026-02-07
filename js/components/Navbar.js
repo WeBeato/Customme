@@ -27,7 +27,7 @@ export function renderNavbar() {
     navWrapper.className = "nav__wrapper";
 
     navLogo.className = "nav__logo";
-    navLogo.href = "../index.html";
+    navLogo.href = "../../index.html";
     navLogoImg.src = "../assets/images/logo.png";
 
     navSearchBox.className = "nav__search-box";
@@ -36,7 +36,7 @@ export function renderNavbar() {
     searchInput.placeholder = "جستجو";
 
     searchIcon.className = "nav__search-icon";
-    searchIcon.src = "../assets/icons/search-normal.svg";
+    searchIcon.src = "../../assets/icons/search-normal.svg";
 
     navButtons.className = "nav__buttons";
 
@@ -44,13 +44,13 @@ export function renderNavbar() {
     loginBtn.textContent = "ورود | ثبت نام";
     loginBtn.href = "#";
     loginBtnIcon.className = "nav__login-icon";
-    loginBtnIcon.src = "../assets/icons/login.svg";
+    loginBtnIcon.src = "../../assets/icons/login.svg";
 
     cartBtn.className = "nav__cart";
     cartBtn.textContent = "سبد خرید";
     cartBtn.href = "#";
     cartBtnIcon.className = "nav__cart-icon";
-    cartBtnIcon.src = "../assets/icons/shopping-cart.svg";
+    cartBtnIcon.src = "../../assets/icons/shopping-cart.svg";
 
     cartBtnNum.className = "nav__cart-num";
     cartBtnNum.textContent = "۰";
