@@ -38,7 +38,7 @@ export function renderDesktopMenu() {
     menuBtn.textContent = "خودت طراحیش کن !";
     menuBtn.href = "#"
     menuBtnIcon.className = "menu__btn-icon";
-    menuBtnIcon.src = "../../assets/icons/magicpen.svg";
+    menuBtnIcon.src = "assets/icons/magicpen.svg";
 
 
     // Append Cheldren
