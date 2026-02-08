@@ -1,4 +1,4 @@
-import { toggleMenu } from "MobileMenu.js";
+import { toggleMenu } from "./MobileMenu.js";
 
 export function renderMobileNav() {
     // Get Elements
