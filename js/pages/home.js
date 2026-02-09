@@ -24,3 +24,58 @@ categories.forEach(category => {
     categoryCard.appendChild(categoryTitle);
 
 });
+
+const bestSellersWrapper = document.querySelector('.best-sellers__wrapper');
+const bestSellers = [
+    { src: 'assets/images/img-3.png', title: 'تیشرت زنانه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/img-2.png', title: 'تیشرت مردانه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/img-1.png', title: 'قاب موبایل آیفون', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/img.png', title: 'کلاه مردانه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/img-7.png', title: 'کلاه قابل طراحی', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/img-6.png', title: 'باکس غذا', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/img-5.png', title: 'ماگ سرامیکی', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/img-4.png', title: 'دفتر سیمی', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+];
+
+
+bestSellers.forEach(p => {
+    const bestSelller = document.createElement('div');
+    const bestSelllerImg = document.createElement('img');
+    const bestSelllerTitle = document.createElement('h6');
+    const bestSelllerIcon = document.createElement('img');
+    const bestSelllerCaption = document.createElement('p');
+    const bestSelllerPrice = document.createElement('h6');
+
+    bestSelller.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'best-seller');
+    bestSelllerImg.className = 'best-seller__img';
+    bestSelllerImg.src = p.src;
+    bestSelllerTitle.className = 'best-seller__title';
+    bestSelllerTitle.textContent = p.title;
+    bestSelllerIcon.className = 'best-seller__icon';
+    bestSelllerIcon.src = 'assets/icons/heart.svg';
+    bestSelllerIcon.setAttribute('data-liked', 'false');
+    bestSelllerCaption.className = 'best-seller__caption';
+    bestSelllerCaption.textContent = p.caption;
+    bestSelllerPrice.className = 'best-seller__price';
+    bestSelllerPrice.textContent = p.price.toLocaleString('fa', 'IR') + ' تومان';
+
+    bestSellersWrapper.appendChild(bestSelller);
+    bestSelller.appendChild(bestSelllerImg);
+    bestSelller.appendChild(bestSelllerTitle);
+    bestSelllerTitle.appendChild(bestSelllerIcon);
+    bestSelller.appendChild(bestSelllerCaption);
+    bestSelller.appendChild(bestSelllerPrice);
+
+    bestSelllerIcon.addEventListener('click', () => {
+        let isLiked = bestSelllerIcon.dataset.liked ==='true';
+
+        isLiked = !isLiked;
+        bestSelllerIcon.dataset.liked = String(isLiked);
+
+        bestSelllerIcon.src =  isLiked
+                ? 'assets/icons/Like.svg'
+                : 'assets/icons/heart.svg';
+
+    });
+
+})
