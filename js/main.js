@@ -1,4 +1,3 @@
-console.log("main is loeaded");
 import { renderNavbar } from "./components/Navbar.js";
 import { renderDesktopMenu } from "./components/DesktopMenu.js";
 import { initNav, renderMobileNav } from "./components/MobileNav.js";

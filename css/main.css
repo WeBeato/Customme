@@ -96,6 +96,7 @@ h6 {
 }
 
 /* Components */
+/* Buttons */
 .primary-btn {
     background-color: var(--Primary);
     color: var(--Tint1);
@@ -131,6 +132,44 @@ h6 {
 .second-btn:hover {
     color: var(--Shade6);
     border-color: var(--Shade6);
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.section-header__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.section-header__title {
+    color: var(--Gray10);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-header__line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Gray4);
+}
+
+.section-header__link {
+    display: block;
+    flex-shrink: 0;
+    color: var(--Primary);
+    font-size: 14px;
+    transition: color 200ms;
+}
+.section-header__link:hover {
+    color: var(--Shade6);
 }
 
 /* App */
