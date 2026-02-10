@@ -174,19 +174,19 @@ h6 {
 }
 
 .section-header__arrows {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 4px;
 }
 
 .section-header__arrow-right {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
 }
 
 .section-header__arrow-left {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
 
 }
 
