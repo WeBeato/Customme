@@ -42,7 +42,7 @@ export function renderMobileMenu() {
         li.className = "mobilemenu__item";
         li.textContent = item.lable;
         icon.className = "mobilemenu__icon";
-        icon.src = "assets/icons/arrow-left.svg";
+        icon.src = "assets/icons/menu-arrow-left.svg";
 
         secondMobileMenu.appendChild(li);
         li.appendChild(icon);

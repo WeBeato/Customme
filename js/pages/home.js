@@ -46,7 +46,7 @@ bestSellers.forEach(p => {
     const bestSelllerCaption = document.createElement('p');
     const bestSelllerPrice = document.createElement('h6');
 
-    bestSelller.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'best-seller');
+    bestSelller.classList.add('col-lg-3', 'col-md-3', 'col-sm-6', 'best-seller');
     bestSelllerImg.className = 'best-seller__img';
     bestSelllerImg.src = p.src;
     bestSelllerTitle.className = 'best-seller__title';
