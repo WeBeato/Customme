@@ -230,7 +230,7 @@
 
     .hero__banner {
         width: 80%;
-        height: 400px;
+        height: 325px;
     }
 
     .hero__object1,
@@ -257,6 +257,121 @@
 
     /* Hero Section */
     .hero__banner {
+        height: 250px;
+        width: 100%;
+    }
+
+    .hero__title {
+        font-size: 20px;
+    }
+
+    .hero__content {
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    .hero__caption {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .hero__buttons {
+        padding: 0 4px;
+        gap: 8px;
+    }
+
+    .hero__buttons a {
+        width: 144px;
+        height: 48px;
+    }
+
+
+    /* Section Header */
+    .section-header__icon {
+        display: none;
+    }
+
+    .section-header__title {
+        font-size: 18px;
+    }
+
+    .section-header__line {
+        display: none;
+    }
+
+    .section-header__link {
+        font-size: 14px;
+    }
+
+    .section-header__arrows {
+        display: flex;
+    }
+
+    .section-header__arrows svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Categories Section */
+    .categories {
+        margin-top: 32px;
+    }
+
+    .categories__wrapper {
+        margin-top: 16px;
+        overflow-x: auto;
+        gap: 14px;
+    }
+
+    .category {
+        padding: 8px;
+        width: 104px;
+        height: 80px;
+        flex-shrink: 0;
+        border-radius: 8px;
+    }
+
+    .category__img {
+        height: 40px;
+        margin-bottom: 4px;
+        border-radius: 4px;
+    }
+
+    .Category__title {
+        font-size: 14px;
+    }
+
+    /* Best Sellers Section */
+    .best-sellers__wrapper {
+        gap: 12px;
+    }
+
+    .best-seller {
+        width: 140px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .best-seller__img {
+        width: 112px;
+        height: 96px;
+        align-self: center;
+    }
+
+    .best-seller__title {
+        font-size: 16px;
+    }
+
+    .best-seller__caption {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:450px) {
+
+    /* Hero Section */
+    .hero__banner {
         height: 200px;
         width: 100%;
     }
@@ -267,7 +382,7 @@
 
     .hero__content {
         width: 100%;
-        padding: 0 24px;
+        padding: 0 8px;
     }
 
     .hero__caption {
@@ -276,8 +391,8 @@
     }
 
     .hero__buttons a {
-        width: 140px;
-        font-size: 10px;
+        width: 128px;
+        height: 40px;
     }
 
     .hero__btn-icon {
@@ -319,17 +434,12 @@
     }
 
     .category {
-        padding: 8px;
         width: 88px;
         height: 72px;
-        flex-shrink: 0;
-        border-radius: 8px;
     }
 
     .category__img {
         height: 32px;
-        margin-bottom: 4px;
-        border-radius: 4px;
     }
 
     .Category__title {
@@ -388,11 +498,6 @@
 
     .hero__caption {
         margin-bottom: 8px;
-    }
-
-    .hero__buttons {
-        padding: 0 4px;
-        gap: 8px;
     }
 
     .hero__buttons a {
