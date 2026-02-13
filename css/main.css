@@ -404,7 +404,7 @@ body {
 
 @media (min-width: 768px) {
     .container {
-        max-width: 850px;
+        max-width: 880px;
     }
 
     .col-md-1 {
