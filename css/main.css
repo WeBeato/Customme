@@ -179,15 +179,10 @@ h6 {
     gap: 4px;
 }
 
-.section-header__arrow-right {
+.section-header__arrows svg{
     width: 24px;
     height: 24px;
-}
-
-.section-header__arrow-left {
-    width: 24px;
-    height: 24px;
-
+    transition: fill 200ms;
 }
 
 /* App */
