@@ -26,6 +26,7 @@ categories.forEach(category => {
 
 });
 
+// Scroll Arrows Logic
 const arrowLeft = document.getElementById('arrowLeft');
 const arrowRight = document.getElementById('arrowRight');
 
@@ -35,11 +36,6 @@ categoriesWrapper.addEventListener('scroll', () => {
     const scrollWidth = categoriesWrapper.scrollWidth;
     const clientWidth = categoriesWrapper.clientWidth;
     const minScroll = clientWidth - scrollWidth;
-
-    console.log(`scrollLeft: ${scrollLeft}`);
-    console.log(`scrollWidth: ${scrollWidth}`);
-    console.log(`clientWidth: ${clientWidth}`);
-    console.log(`minScroll: ${minScroll}`);
 
     if (scrollLeft <= minScroll + 20) {
         arrowLeft.style.fill = 'var(--Primary)';
@@ -52,6 +48,21 @@ categoriesWrapper.addEventListener('scroll', () => {
         arrowRight.style.fill = 'var(--Primary)';
 
     }
+})
+
+const categoryWidth = document.querySelector('.category').clientWidth;
+
+arrowLeft.addEventListener('click', () => {
+    categoriesWrapper.scrollBy({
+        left: categoryWidth,
+        behavior: 'smooth'
+    });
+})
+arrowRight.addEventListener('click', () => {
+    categoriesWrapper.scrollBy({
+        left: -categoryWidth,
+        behavior: 'smooth'
+    });
 })
 
 // Best Seller Section Scripts
