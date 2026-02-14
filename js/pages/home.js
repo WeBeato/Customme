@@ -1,3 +1,4 @@
+// Categories Section Scripts
 const categoriesWrapper = document.querySelector(".categories__wrapper");
 const categories = [
     { title: "قاب موبایل", src: "assets/images/mobile.png" },
@@ -25,6 +26,35 @@ categories.forEach(category => {
 
 });
 
+const arrowLeft = document.getElementById('arrowLeft');
+const arrowRight = document.getElementById('arrowRight');
+
+categoriesWrapper.addEventListener('scroll', () => {
+
+    const scrollLeft = categoriesWrapper.scrollLeft;
+    const scrollWidth = categoriesWrapper.scrollWidth;
+    const clientWidth = categoriesWrapper.clientWidth;
+    const minScroll = clientWidth - scrollWidth;
+
+    console.log(`scrollLeft: ${scrollLeft}`);
+    console.log(`scrollWidth: ${scrollWidth}`);
+    console.log(`clientWidth: ${clientWidth}`);
+    console.log(`minScroll: ${minScroll}`);
+
+    if (scrollLeft <= minScroll + 20) {
+        arrowLeft.style.fill = 'var(--Primary)';
+        arrowRight.style.fill = 'var(--Tint3)';
+    } else if (scrollLeft >= -20) {
+        arrowRight.style.fill = 'var(--Primary)';
+        arrowLeft.style.fill = 'var(--Tint3)';
+    } else {
+        arrowLeft.style.fill = 'var(--Primary)';
+        arrowRight.style.fill = 'var(--Primary)';
+
+    }
+})
+
+// Best Seller Section Scripts
 const bestSellersWrapper = document.querySelector('.best-sellers__wrapper');
 const bestSellers = [
     { src: 'assets/images/img-3.png', title: 'تیشرت زنانه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
@@ -67,14 +97,14 @@ bestSellers.forEach(p => {
     bestSelller.appendChild(bestSelllerPrice);
 
     bestSelllerIcon.addEventListener('click', () => {
-        let isLiked = bestSelllerIcon.dataset.liked ==='true';
+        let isLiked = bestSelllerIcon.dataset.liked === 'true';
 
         isLiked = !isLiked;
         bestSelllerIcon.dataset.liked = String(isLiked);
 
-        bestSelllerIcon.src =  isLiked
-                ? 'assets/icons/Like.svg'
-                : 'assets/icons/heart.svg';
+        bestSelllerIcon.src = isLiked
+            ? 'assets/icons/Like.svg'
+            : 'assets/icons/heart.svg';
 
     });
 
