@@ -657,6 +657,7 @@
     /* Offer Section */
     .offer__wrapper {
         height: 185px;
+        gap: 8px;
     }
 
     .offer__icon {
@@ -752,7 +753,6 @@
     /* Offer SEction */
     .offer__wrapper {
         height: 140px;
-        gap: 8px;
     }
 
     .offer__icon {
