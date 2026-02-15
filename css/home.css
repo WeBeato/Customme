@@ -214,6 +214,39 @@
     grid-area: 2 / 4 / 3 / 5;
 }
 
+.offer__home,
+.offer__clothing,
+.offer__digital,
+.offer__office,
+.offer__stiker {
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer__gradient {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.91) 63%, rgba(0, 0, 0, 1) 100%);
+    opacity: 0.9;
+    bottom: 0;
+    left: 0;
+}
+.offer__icon{
+    width: 57px;
+    height: 97px;
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+.offer__title {
+    color: var(--Tint3);
+    position: absolute;
+    bottom: 48px;
+    right: 24px;
+}
+
 /* Responsive */
 @media (max-width:1400px) {}
 
