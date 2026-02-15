@@ -663,6 +663,7 @@
     .offer__icon {
         width: 24px;
         height: 41px;
+        left: 8px;
     }
 
     .offer__title {
@@ -758,7 +759,6 @@
     .offer__icon {
         width: 16px;
         height: 27px;
-        left: 8px;
     }
 
     .offer__title {
