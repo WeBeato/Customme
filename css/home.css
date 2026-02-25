@@ -425,6 +425,55 @@
     height: 24px;
 }
 
+/* Banner gift section */
+.banner-gift {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.banner-gift__father {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 188px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.banner-gift__img {
+    width: 286px;
+    height: 100%;
+}
+
+.banner-gift__content {
+    background-color: var(--Tint3);
+    height: 100%;
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner-gift__title {
+
+}
+
+.banner-gift__btn {}
+
+.banner-gift__mother {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 188px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
 /* Responsive */
 @media (max-width:1400px) {
     .offer__wrapper {
