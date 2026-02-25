@@ -459,9 +459,7 @@
     gap: 24px;
 }
 
-.banner-gift__title {
-
-}
+.banner-gift__title {}
 
 .banner-gift__btn {}
 
@@ -510,6 +508,11 @@
 
     .offer__title {
         font-size: 24px;
+    }
+
+    /* Banner gift section */
+    .banner-gift__title {
+        font-size: 20px;
     }
 }
 
@@ -613,6 +616,13 @@
     .designer__sample {
         width: 65px;
         height: 65px;
+    }
+
+    /* Banner gift section */
+    .banner-gift__btn {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
     }
 }
 
@@ -753,6 +763,11 @@
     .designer__btn-icon {
         width: 16px;
         height: 16px;
+    }
+
+    /* Banner gift section */
+    .banner-gift {
+        flex-direction: column-reverse;
     }
 
 }
@@ -941,6 +956,11 @@
         height: 56px;
     }
 
+    /* Banner gift section */
+    .banner-gift__title {
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -1084,6 +1104,12 @@
     .designer {
         width: 152px;
     }
+
+
+    /* Banner gift section */
+    .banner-gift__btn {
+        width: 128px;
+    }
 }
 
 @media (max-width:360px) {
@@ -1194,5 +1220,26 @@
 
     .designer {
         width: 140px;
+    }
+
+
+    /* Banner gift section */
+    .banner-gift__father,
+    .banner-gift__mother {
+        height: 92px;
+    }
+
+    .banner-gift__content {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .banner-gift__title {
+        font-size: 12px;
+    }
+
+    .banner-gift__btn {
+        border: none;
+        padding: 0;
     }
 }
