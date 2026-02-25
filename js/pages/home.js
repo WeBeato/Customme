@@ -201,3 +201,100 @@ popularDesigns.forEach(d => {
 
 
 });
+
+// Designers Section
+const designersWrapper = document.querySelector('.designers__wrapper');
+const designers = [
+    { profile: 'assets/images/Profile-1.png', name: 'نگار زمانی', followers: 400, designs: 56, sales: 370, sample1: 'assets/images/sample1.png', sample2: 'assets/images/sample2.png', sample3: 'assets/images/sample3.png' },
+    { profile: 'assets/images/Profile-2.png', name: 'شهرام طالبی', followers: 400, designs: 56, sales: 370, sample1: 'assets/images/sample4.png', sample2: 'assets/images/sample5.png', sample3: 'assets/images/sample6.png' },
+    { profile: 'assets/images/Profile-3.png', name: 'سارا محمدی', followers: 400, designs: 56, sales: 370, sample1: 'assets/images/sample7.png', sample2: 'assets/images/sample8.png', sample3: 'assets/images/sample9.png' },
+    { profile: 'assets/images/Profile-4.png', name: 'آرش نظری', followers: 400, designs: 56, sales: 370, sample1: 'assets/images/sample10.png', sample2: 'assets/images/sample11.png', sample3: 'assets/images/sample12.png' },
+    { profile: 'assets/images/Profile-5.png', name: 'سمانه جوادی', followers: 400, designs: 56, sales: 370, sample1: 'assets/images/sample13.png', sample2: 'assets/images/sample14.png', sample3: 'assets/images/sample15.png' },
+    { profile: 'assets/images/Profile-6.png', name: 'سعید سلیمی', followers: 400, designs: 56, sales: 370, sample1: 'assets/images/sample16.png', sample2: 'assets/images/sample17.png', sample3: 'assets/images/sample18.png' },
+    { profile: 'assets/images/Profile-7.png', name: 'مرجان جعفری', followers: 400, designs: 56, sales: 370, sample1: 'assets/images/sample19.png', sample2: 'assets/images/sample20.png', sample3: 'assets/images/sample21.png' },
+    { profile: 'assets/images/Profile-8.png', name: 'نیلوفر کریمی', followers: 400, designs: 56, sales: 370, sample1: 'assets/images/sample22.png', sample2: 'assets/images/sample23.png', sample3: 'assets/images/sample24.png' }
+];
+
+designers.forEach(d => {
+    const designer = document.createElement('div');
+    const designerProfileBg = document.createElement('div');
+    const designerProfile = document.createElement('img');
+    const designerName = document.createElement('p');
+    const designerInfo = document.createElement('div');
+    const designerFollowers = document.createElement('p');
+    const designerInfoLine1 = document.createElement('div');
+    const designerDesigns = document.createElement('p');
+    const designerInfoLine2 = document.createElement('div');
+    const designerSales = document.createElement('p');
+    const designerSamples = document.createElement('div');
+    const designerSample1 = document.createElement('img');
+    const designerSample2 = document.createElement('img');
+    const designerSample3 = document.createElement('img');
+    const designerBtn = document.createElement('button');
+    const designerBtnText = document.createElement('span');
+    const designerBtnIcon = document.createElement('img');
+
+    designer.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'designer');
+    designer.setAttribute('data-followed', 'false');
+    designerProfileBg.className = 'designer__profile-bg';
+    designerProfile.className = 'designer__profile';
+    designerProfile.src = d.profile;
+    designerName.className = 'designer__name';
+    designerName.textContent = d.name;
+    designerInfo.className = 'designer__info';
+    designerFollowers.className = 'designer__followers';
+    designerFollowers.textContent = `دنبال کنندگان : ${d.followers.toLocaleString('fa', 'IR')}`;
+    designerDesigns.className = 'designer__designs';
+    designerDesigns.textContent = ` تعداد طرح ها : ${d.designs.toLocaleString('fa', 'IR')}`;
+    designerSales.className = 'designer__sales';
+    designerSales.textContent = `  آمار فروش : ${d.sales.toLocaleString('fa', 'IR')}`;
+    designerInfoLine1.className = 'designer__line';
+    designerInfoLine2.className = 'designer__line';
+    designerSamples.className = 'designer__samples';
+    designerSample1.className = 'designer__sample';
+    designerSample1.src = d.sample1;
+    designerSample2.className = 'designer__sample';
+    designerSample2.src = d.sample2;
+    designerSample3.className = 'designer__sample';
+    designerSample3.src = d.sample3;
+    designerBtn.className = 'designer__btn';
+    designerBtnText.textContent = 'دنبال کردن';
+    designerBtnIcon.className = 'designer__btn-icon';
+    designerBtnIcon.src = 'assets/icons/profile-add.svg';
+
+    designersWrapper.appendChild(designer);
+    designer.appendChild(designerProfileBg);
+    designer.appendChild(designerProfile);
+    designer.appendChild(designerName);
+    designer.appendChild(designerInfo);
+    designer.appendChild(designerSamples);
+    designer.appendChild(designerBtn);
+    designerInfo.appendChild(designerFollowers);
+    designerInfo.appendChild(designerInfoLine1);
+    designerInfo.appendChild(designerDesigns);
+    designerInfo.appendChild(designerInfoLine2);
+    designerInfo.appendChild(designerSales);
+    designerSamples.appendChild(designerSample1);
+    designerSamples.appendChild(designerSample2);
+    designerSamples.appendChild(designerSample3);
+    designerBtn.appendChild(designerBtnText);
+    designerBtn.appendChild(designerBtnIcon);
+
+    designerBtn.addEventListener('click', () => {
+        let isSaved = designer.dataset.saved === 'true';
+
+        isSaved = !isSaved;
+        designer.dataset.saved = String(isSaved);
+
+        if (isSaved) {
+            designerBtnText.textContent = 'دنبال شده';
+            designerBtnIcon.src = 'assets/icons/profile-tick.svg';
+            designerBtn.classList.add('designer__btn--saved');
+        } if (!isSaved) {
+            designerBtnText.textContent = 'دنبال کردن'
+            designerBtnIcon.src = 'assets/icons/profile-add.svg';
+            designerBtn.classList.remove('designer__btn--saved');
+        }
+
+    });
+})
