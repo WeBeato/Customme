@@ -701,7 +701,7 @@
         height: 32px;
     }
 
-    .designer__btn-icon{
+    .designer__btn-icon {
         width: 16px;
         height: 16px;
     }
@@ -1139,6 +1139,10 @@
     }
 
     /* Designers Section */
+    .designers__wrapper {
+        gap: 8px;
+    }
+
     .designer {
         width: 140px;
     }
