@@ -554,44 +554,52 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 24px;
+    width: 100%;
+    height: 160px;
+}
+
+.wedding__imgs div {
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center center;
 }
 
 .wedding__bride {
+    background: url("../assets/images/bride.png");
     grid-row: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 1;
-    border-radius: 16px;
 }
 
 .wedding__cake {
+    background: url("../assets/images/wedding-cake.png");
     grid-column-start: 2;
     grid-row-start: 1;
-    border-radius: 16px;
 }
 
 .wedding__stand {
+    background: url("../assets/images/wedding-stand.png");
     grid-column-start: 2;
     grid-row-start: 2;
-    border-radius: 16px;
 }
 
 .wedding__flower {
+    background: url("../assets/images/wedding-flower.png");
     grid-column-start: 3;
     grid-row-start: 1;
-    border-radius: 16px;
 }
 
 .wedding__table {
+    background: url("../assets/images/wedding-table.png");
     grid-column-start: 3;
     grid-row-start: 2;
-    border-radius: 16px;
 }
 
 .wedding__candle {
+    background: url("../assets/images/wedding-candle.png");
     grid-row: span 2 / span 2;
     grid-column-start: 4;
     grid-row-start: 1;
-    border-radius: 16px;
 }
 
 .wedding__title {}
@@ -602,8 +610,6 @@
     width: 24px;
     height: 24px;
 }
-
-
 
 /* Responsive */
 @media (max-width:1400px) {
@@ -777,6 +783,15 @@
 
     .new-design__img {
         height: 225px;
+    }
+
+    /* Wedding Section */
+    .wedding__imgs {
+        gap: 20px;
+    }
+
+    .wedding__imgs img {
+        border-radius: 12px;
     }
 
 }
@@ -957,6 +972,25 @@
         font-size: 16px;
     }
 
+    /* Wedding Section */
+    .wedding {
+        margin-top: 0;
+    }
+
+    .wedding__imgs {
+        gap: 16px;
+        height: 120px;
+    }
+
+    .wedding__title {
+        font-size: 20px;
+    }
+
+    .wedding__btn {
+        width: 140px;
+        height: 40px;
+        font-size: 12px;
+    }
 }
 
 @media (max-width:576px) {
@@ -1184,6 +1218,39 @@
         display: none;
     }
 
+    /* Wedding Section */
+    .wedding__imgs {
+        gap: 12px;
+    }
+
+    .wedding__cake {
+        grid-column: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .wedding div:nth-child(3) {
+        display: none;
+    }
+
+    .wedding div:nth-child(4) {
+        display: none;
+    }
+
+    .wedding__table {
+        grid-column: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .wedding__title {
+        font-size: 16px;
+    }
+
+    .wedding__btn {
+        width: 100%;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -1334,6 +1401,19 @@
 
     .new-design__caption {
         font-size: 14px;
+    }
+
+    /* Wedding Section */
+    .wedding__imgs {
+        gap: 8px;
+        height: 90px;
+    }
+
+    .wedding__imgs div {
+        border-radius: 8px;
+    }
+    .wedding__title{
+        font-size: 12px;
     }
 }
 
