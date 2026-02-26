@@ -298,3 +298,56 @@ designers.forEach(d => {
 
     });
 })
+
+// New Designs Section
+const newDesignsWrapper = document.querySelector('.new-designs__wrapper');
+const newDesigns = [
+    { src: 'assets/images/new-design1.png', title: 'آباژور', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/new-design2.png', title: 'ماگ قابل طراحی', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/new-design3.png', title: 'کیف زنانه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/new-design4.png', title: 'چمدان', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/new-design5.png', title: 'قمقمه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/new-design6.png', title: 'کوسن ', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/new-design7.png', title: 'ساک هدیه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+];
+
+newDesigns.forEach(nd => {
+    const newDesign = document.createElement('div');
+    const newDesignImg = document.createElement('img');
+    const newDesignTitle = document.createElement('h6');
+    const newDesignIcon = document.createElement('img');
+    const newDesignCaption = document.createElement('p');
+    const newDesignPrice = document.createElement('h6');
+
+    newDesign.classList.add('col-lg-3', 'col-md-4', 'col-sm-6', 'new-design');
+    newDesign.setAttribute('data-liked', 'false');
+    newDesignImg.className = 'new-design__img';
+    newDesignImg.src = nd.src;
+    newDesignTitle.className = 'new-design__title';
+    newDesignTitle.textContent = nd.title;
+    newDesignIcon.className = 'new-design__icon';
+    newDesignIcon.src = 'assets/icons/heart.svg';
+    newDesignCaption.className = 'new-design__caption';
+    newDesignCaption.textContent = nd.caption;
+    newDesignPrice.className = 'new-design__price';
+    newDesignPrice.textContent = nd.price.toLocaleString('fa', 'IR') + ' تومان';
+
+    newDesignsWrapper.appendChild(newDesign);
+    newDesign.appendChild(newDesignImg);
+    newDesign.appendChild(newDesignTitle);
+    newDesignTitle.appendChild(newDesignIcon);
+    newDesign.appendChild(newDesignCaption);
+    newDesign.appendChild(newDesignPrice);
+
+    newDesignIcon.addEventListener('click', () => {
+        let isLiked = newDesign.dataset.liked === 'true';
+
+        isLiked = !isLiked;
+        newDesign.dataset.liked = String(isLiked);
+
+        newDesignIcon.src = isLiked
+            ? 'assets/icons/Like.svg'
+            : 'assets/icons/heart.svg';
+
+    });
+});
