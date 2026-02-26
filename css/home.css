@@ -472,6 +472,73 @@
     overflow: hidden;
 }
 
+/* New Designs Section */
+.new-designs {
+    margin-top: 40px;
+}
+
+.new-designs__wrapper {
+    margin-top: 32px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.new-designs__info {
+    width: 288px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.new-designs__title {
+    color: var(--Gray9);
+}
+
+.new-designs__img {
+    width: 212px;
+    height: 182px;
+}
+
+.new-design {
+    border: 1px solid var(--Gray5);
+    border-radius: 16px;
+    padding: 16px;
+    width: max-content;
+}
+
+.new-design__img {
+    height: 256px;
+    border-radius: 8px;
+}
+
+.new-design__title {
+    color: var(--Shade1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.new-design__icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.new-design__caption {
+    color: var(--Shade1);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.new-design__price {
+    color: var(--Shade1);
+    text-align: left;
+}
+
 /* Responsive */
 @media (max-width:1400px) {
     .offer__wrapper {
@@ -624,6 +691,28 @@
         height: 40px;
         font-size: 12px;
     }
+
+    /* New Designs Section */
+    .new-designs__wrapper {
+        gap: 16px;
+    }
+
+    .new-designs__info {
+        width: 225px;
+    }
+
+    .new-designs__title {
+        font-size: 20px;
+    }
+
+    .new-design {
+        width: 235px;
+    }
+
+    .new-design__img {
+        height: 225px;
+    }
+
 }
 
 @media (max-width:768px) {
@@ -770,6 +859,38 @@
         flex-direction: column-reverse;
     }
 
+    /* New Designs Section */
+    .new-designs__info {
+        width: 170px;
+        padding: 12px;
+    }
+
+    .new-designs__title {
+        font-size: 16px;
+    }
+
+    .new-designs__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .new-design {
+        width: 170px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new-design__img {
+        width: 120px;
+        height: 120px;
+        align-self: center;
+    }
+
+    .new-design__title {
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width:576px) {
@@ -856,10 +977,6 @@
     /* Best Sellers Section */
     .best-sellers__wrapper {
         gap: 12px;
-    }
-
-    .best-seller {
-        width: 170px;
     }
 
     .best-seller__img {
@@ -961,6 +1078,46 @@
         font-size: 16px;
     }
 
+    /* New Designs Section */
+    .new-designs__wrapper {
+        gap: 12px;
+    }
+
+    .new-designs__info {
+        width: 100%;
+    }
+
+    .new-designs__title {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .new-designs__img {
+        width: 180px;
+        height: 145px;
+    }
+
+    .new-design__img {
+        width: 112px;
+        height: 96px;
+    }
+
+    .new-design__title {
+        font-size: 14px;
+    }
+
+    .new-designs__wrapper div:nth-child(4) {
+        display: none;
+    }
+
+    .new-designs__wrapper div:nth-child(6) {
+        display: none;
+    }
+
+    .new-designs__wrapper div:nth-child(7) {
+        display: none;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -1039,25 +1196,9 @@
     }
 
     /* Best Sellers Section */
-    .best-sellers__wrapper {
-        gap: 12px;
-    }
 
     .best-seller {
         width: 160px;
-        padding: 12px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .best-seller__img {
-        width: 112px;
-        height: 96px;
-        align-self: center;
-    }
-
-    .best-seller__title {
-        font-size: 16px;
     }
 
     .best-seller__caption {
@@ -1109,6 +1250,24 @@
     /* Banner gift section */
     .banner-gift__btn {
         width: 128px;
+    }
+
+    /* New Designs Section */
+    .new-designs__title {
+        font-size: 12px;
+    }
+
+    .new-designs__img {
+        width: 160px;
+        height: 130px;
+    }
+
+    .new-design {
+        width: 160px;
+    }
+
+    .new-design__caption {
+        font-size: 14px;
     }
 }
 
@@ -1241,5 +1400,31 @@
     .banner-gift__btn {
         border: none;
         padding: 0;
+    }
+
+    /* New Designs Section */
+    .new-designs__wrapper {
+        gap: 8px;
+    }
+
+    .new-design {
+        width: 140px;
+        height: 244px;
+    }
+
+    .new-design__img {
+        width: 96px;
+    }
+
+    .new-design__title {
+        font-size: 14px;
+    }
+
+    .new-design__caption {
+        font-size: 12px;
+    }
+
+    .new-design__price {
+        font-size: 16px;
     }
 }
