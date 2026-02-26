@@ -539,6 +539,72 @@
     text-align: left;
 }
 
+/* Wedding Section */
+.wedding {
+    margin-top: 40px;
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.wedding__imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.wedding__bride {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border-radius: 16px;
+}
+
+.wedding__cake {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    border-radius: 16px;
+}
+
+.wedding__stand {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-radius: 16px;
+}
+
+.wedding__flower {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    border-radius: 16px;
+}
+
+.wedding__table {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border-radius: 16px;
+}
+
+.wedding__candle {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    border-radius: 16px;
+}
+
+.wedding__title {}
+
+.wedding__btn {}
+
+.wedding__icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+
 /* Responsive */
 @media (max-width:1400px) {
     .offer__wrapper {
