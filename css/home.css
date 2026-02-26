@@ -1412,8 +1412,16 @@
     .wedding__imgs div {
         border-radius: 8px;
     }
-    .wedding__title{
+
+    .wedding__title {
         font-size: 12px;
+    }
+    .wedding__btn{
+        font-size: 10px;
+    }
+    .wedding__icon {
+        width: 16px;
+        height: 16px;
     }
 }
 
