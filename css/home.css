@@ -611,6 +611,64 @@
     height: 24px;
 }
 
+/* Favourites Section */
+.favourites {
+    margin-top: 40px;
+}
+
+.favourites__wrapper {
+    margin-top: 32px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.favourites__carousel {
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    left: -20px;
+    top: 50%;
+}
+
+.favourite {
+    border: 1px solid var(--Gray5);
+    border-radius: 16px;
+    padding: 16px;
+    width: max-content;
+}
+
+.favourite__img {
+    height: 256px;
+    border-radius: 8px;
+}
+
+.favourite__title {
+    color: var(--Shade1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.favourite__icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.favourite__caption {
+    color: var(--Shade1);
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.favourite__price {
+    color: var(--Shade1);
+    text-align: left;
+}
+
 /* Responsive */
 @media (max-width:1400px) {
     .offer__wrapper {
@@ -1416,9 +1474,11 @@
     .wedding__title {
         font-size: 12px;
     }
-    .wedding__btn{
+
+    .wedding__btn {
         font-size: 10px;
     }
+
     .wedding__icon {
         width: 16px;
         height: 16px;

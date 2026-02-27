@@ -351,3 +351,54 @@ newDesigns.forEach(nd => {
 
     });
 });
+
+
+// Favourites Section
+const favouritesWrapper = document.querySelector('.favourites__wrapper');
+const favourites = [
+    { src: 'assets/images/favourite1.png', title: 'کیف زنانه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/favourite2.png', title: 'جوراب زنانه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/favourite3.png', title: 'قاب موبایل آیفون', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+    { src: 'assets/images/favourite4.png', title: 'تیشرت مردانه', caption: 'دارای رنگ بندی، قابل طراحی', price: 150000 },
+];
+
+favourites.forEach(f => {
+    const favourite = document.createElement('div');
+    const favouriteImg = document.createElement('img');
+    const favouriteTitle = document.createElement('h6');
+    const favouriteIcon = document.createElement('img');
+    const favouriteCaption = document.createElement('p');
+    const favouritePrice = document.createElement('h6');
+
+    favourite.className = 'favourite';
+    favourite.setAttribute('data-liked', 'true');
+    favouriteImg.className = 'favourite__img';
+    favouriteImg.src = f.src;
+    favouriteTitle.className = 'favourite__title';
+    favouriteTitle.textContent = f.title;
+    favouriteIcon.className = 'favourite__icon';
+    favouriteIcon.src = 'assets/icons/Like.svg';
+    favouriteCaption.className = 'favourite__caption';
+    favouriteCaption.textContent = f.caption;
+    favouritePrice.className = 'favourite__price';
+    favouritePrice.textContent = f.price.toLocaleString('fa', 'IR') + ' تومان';
+
+    favouritesWrapper.appendChild(favourite);
+    favourite.appendChild(favouriteImg);
+    favourite.appendChild(favouriteTitle);
+    favouriteTitle.appendChild(favouriteIcon);
+    favourite.appendChild(favouriteCaption);
+    favourite.appendChild(favouritePrice);
+
+    favouriteIcon.addEventListener('click', () => {
+        let isLiked = favourite.dataset.liked === 'false';
+
+        isLiked = !isLiked;
+        favourite.dataset.liked = String(!isLiked);
+
+        favouriteIcon.src = isLiked
+            ? 'assets/icons/heart.svg'
+            : 'assets/icons/Like.svg';
+
+    });
+})

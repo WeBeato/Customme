@@ -230,7 +230,7 @@ body {
     font-family: vazirmatn-regular;
     color: var(--Shade1);
     background-color: var(--tint1);
-    height: 5000px;
+    height: 6000px;
 }
 
 @media (max-width:768px) {
