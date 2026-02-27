@@ -6,6 +6,10 @@ export function renderFooter() {
     const topFooterContainer = document.createElement('div');
     const topFooterWrap = document.createElement('div');
 
+    const topFooterSupport = document.createElement('div');
+    const topFooterSupportContact = document.createElement('p');
+    const topFooterSupportTime = document.createElement('p');
+
     const topFooterNewsletter = document.createElement('div');
     const topFooterNewsletterTitle = document.createElement('p');
     const topFooterNewsletterInputWrap = document.createElement('div');
@@ -23,11 +27,19 @@ export function renderFooter() {
     const topFooterSocialsFacebookImg = document.createElement('img');
     const topFooterSocialsInstagram = document.createElement('a');
     const topFooterSocialsInstagramImg = document.createElement('img');
+
+    const topFooterCopyright = document.createElement('p');
+
     // Add Atributes
     topFooter.className = 'top-footer';
     topFooterContainer.className = 'container';
     topFooterWrap.className = 'top-footer__wrap';
 
+    topFooterSupport.classList = 'top-footer__support';
+    topFooterSupportContact.classList = 'top-footer__support__contact';
+    topFooterSupportContact.textContent = 'تماس با پشتیبانی : ۰۲۱-۳۴۵۶۰۰۰';
+    topFooterSupportTime.classList = 'top-footer__support__Time';
+    topFooterSupportTime.textContent = 'پاسخگویی ۲۴ ساعته ، ۷ روز هفته ';
 
     topFooterNewsletter.className = 'top-footer__newsletter';
     topFooterNewsletterTitle.className = 'top-footer__newsletter__title';
@@ -56,10 +68,17 @@ export function renderFooter() {
     topFooterSocialsInstagram.href = '#';
     topFooterSocialsInstagramImg.src = 'assets/icons/instagram.svg'
 
+    topFooterCopyright.className = 'top-footer__copyright';
+    topFooterCopyright.textContent = 'تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد';
+
     // Append Chidren
     footer.appendChild(topFooter);
     topFooter.appendChild(topFooterContainer);
     topFooterContainer.append(topFooterWrap);
+
+    topFooterWrap.appendChild(topFooterSupport);
+    topFooterSupport.appendChild(topFooterSupportContact);
+    topFooterSupport.appendChild(topFooterSupportTime);
 
     topFooterWrap.appendChild(topFooterNewsletter);
     topFooterNewsletter.appendChild(topFooterNewsletterTitle);
@@ -78,4 +97,6 @@ export function renderFooter() {
     topFooterSocialsFacebook.appendChild(topFooterSocialsFacebookImg);
     topFooterSocialsLinks.appendChild(topFooterSocialsInstagram);
     topFooterSocialsInstagram.appendChild(topFooterSocialsInstagramImg);
+
+    topFooterWrap.appendChild(topFooterCopyright);
 }

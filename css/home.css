@@ -868,6 +868,10 @@
         gap: 16px;
     }
 
+    .favourites__carousel {
+        left: 0;
+    }
+
     .favourite {
         width: 235px;
     }
@@ -1070,6 +1074,11 @@
     }
 
     /* Favourites Section */
+    .favourites__carousel {
+        width: 30px;
+        height: 30px;
+    }
+
     .favourite {
         padding: 12px;
         width: 170px;
