@@ -614,13 +614,18 @@
 /* Favourites Section */
 .favourites {
     margin-top: 40px;
+    position: relative;
+}
+
+.favourites .section-header__link {
+    display: none;
 }
 
 .favourites__wrapper {
     margin-top: 32px;
     display: flex;
     gap: 20px;
-    position: relative;
+    overflow-x: auto;
 }
 
 .favourites__carousel {
@@ -629,7 +634,7 @@
     width: 40px;
     height: 40px;
     left: -20px;
-    top: 50%;
+    top: 55%;
 }
 
 .favourite {
@@ -718,6 +723,11 @@
 
     .hero__banner {
         width: 600px;
+    }
+
+    /* Favourites Section */
+    .favourite {
+        flex-shrink: 0;
     }
 }
 
@@ -852,6 +862,18 @@
         border-radius: 12px;
     }
 
+    /* Favourites Section */
+    .favourites__wrapper {
+        gap: 16px;
+    }
+
+    .favourite {
+        width: 235px;
+    }
+
+    .favourite__img {
+        height: 225px;
+    }
 }
 
 @media (max-width:768px) {
@@ -1031,10 +1053,6 @@
     }
 
     /* Wedding Section */
-    .wedding {
-        margin-top: 0;
-    }
-
     .wedding__imgs {
         gap: 16px;
         height: 120px;
@@ -1048,6 +1066,24 @@
         width: 140px;
         height: 40px;
         font-size: 12px;
+    }
+
+    /* Favourites Section */
+    .favourite {
+        padding: 12px;
+        width: 170px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .favourite__img {
+        width: 120px;
+        height: 120px;
+        align-self: center;
+    }
+
+    .favourite__title {
+        font-size: 16px;
     }
 }
 
@@ -1309,6 +1345,19 @@
         width: 100%;
     }
 
+    /* Favourites Section */
+    .favourites .section-header__link {
+        display: block;
+    }
+
+    .favourites__wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .favourites__carousel {
+        display: none;
+    }
 }
 
 @media (max-width:450px) {
@@ -1483,6 +1532,15 @@
         width: 16px;
         height: 16px;
     }
+
+    /* Favourites Section */
+    .favourite {
+        width: 160px;
+    }
+
+    .favourite__caption {
+        font-size: 14px;
+    }
 }
 
 @media (max-width:360px) {
@@ -1639,6 +1697,32 @@
     }
 
     .new-design__price {
+        font-size: 16px;
+    }
+
+    /* Favourites Section */
+    .favourites__wrapper {
+        gap: 8px;
+    }
+
+    .favourite {
+        width: 140px;
+        height: 244px;
+    }
+
+    .favourite__img {
+        width: 96px;
+    }
+
+    .favourite__title {
+        font-size: 14px;
+    }
+
+    .favourite__caption {
+        font-size: 12px;
+    }
+
+    .favourite__price {
         font-size: 16px;
     }
 }

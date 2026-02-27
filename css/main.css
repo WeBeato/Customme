@@ -68,37 +68,37 @@
 h1 {
     font-family: vazirmatn-bold;
     font-size: 44px;
-    line-height:140%;
+    line-height: 140%;
 }
 
 h2 {
     font-family: vazirmatn-bold;
     font-size: 40px;
-    line-height:140%;
+    line-height: 140%;
 }
 
 h3 {
     font-family: vazirmatn-bold;
     font-size: 32px;
-    line-height:140%;
+    line-height: 140%;
 }
 
 h4 {
     font-family: vazirmatn-bold;
     font-size: 24px;
-    line-height:140%;
+    line-height: 140%;
 }
 
 h5 {
     font-family: vazirmatn-bold;
     font-size: 20px;
-    line-height:140%;
+    line-height: 140%;
 }
 
 h6 {
     font-family: vazirmatn-bold;
     font-size: 18px;
-    line-height:140%;
+    line-height: 140%;
 }
 
 /* Components */
@@ -185,7 +185,7 @@ h6 {
     gap: 4px;
 }
 
-.section-header__arrows svg{
+.section-header__arrows svg {
     width: 24px;
     height: 24px;
     transition: fill 200ms;
@@ -230,7 +230,6 @@ body {
     font-family: vazirmatn-regular;
     color: var(--Shade1);
     background-color: var(--tint1);
-    height: 6000px;
 }
 
 @media (max-width:768px) {
