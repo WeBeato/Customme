@@ -1,4 +1,4 @@
-export function renderFooter() {
+export function renderTopFooter() {
     const footer = document.querySelector('footer');
 
     // Create Elements
