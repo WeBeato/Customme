@@ -78,6 +78,33 @@ export function renderBottomFooter() {
 
     const bottomFooterCopy = document.createElement('p');
 
+    const bottomFooterMobileMenu = document.createElement('ul');
+    const bottomFooterMobileMenuItems = [
+        { icon: 'assets/icons/home-2.svg', name: 'خانه' },
+        { icon: 'assets/icons/Design.svg', name: 'طراحی سفارشی' },
+        { icon: 'assets/icons/Cart.svg', name: 'سبد خرید' },
+        { icon: 'assets/icons/User.svg', name: 'پروفایل' }
+    ];
+    bottomFooterMobileMenuItems.forEach(item => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        const icon = document.createElement('img');
+        const name = document.createElement('span');
+
+        li.className = 'bottom-footer__mobile-menu-item';
+        a.className = 'bottom-footer__mobile-menu-link';
+
+        icon.className = 'bottom-footer__mobile-menu-icon';
+        icon.src = item.icon;
+        name.className = 'bottom-footer__mobile-menu-name';
+        name.textContent = item.name;
+
+        bottomFooterMobileMenu.appendChild(li);
+        li.appendChild(a);
+        a.appendChild(icon);
+        a.appendChild(name);
+    })
+
     // Add Atributes
     bottomFooter.className = 'bottom-footer';
     bottomFooterContainer.className = 'container';
@@ -120,6 +147,8 @@ export function renderBottomFooter() {
     bottomFooterCopy.className = 'bootom-footer__copy';
     bottomFooterCopy.textContent = 'تمام حقوق این وبسایت متعلق به فروشگاه آنلاین کاستومی می باشد';
 
+    bottomFooterMobileMenu.className = 'bottom-footer__mobile-menu';
+
     // Append Chidren
     footer.appendChild(bottomFooter);
     bottomFooter.appendChild(bottomFooterContainer);
@@ -127,6 +156,7 @@ export function renderBottomFooter() {
 
     bottomFooterWrap.appendChild(bottomFooterContent);
     bottomFooterWrap.appendChild(bottomFooterCopy);
+    bottomFooterWrap.appendChild(bottomFooterMobileMenu);
 
     bottomFooterContent.appendChild(bottomFooterMenus);
     bottomFooterContent.appendChild(bottomFooterInfo);
@@ -145,5 +175,6 @@ export function renderBottomFooter() {
     bottomFooterLicenes.appendChild(bottomFooterLicene1);
     bottomFooterLicenes.appendChild(bottomFooterLicene2);
     bottomFooterLicenes.appendChild(bottomFooterLicene3);
+
 
 }

@@ -90,3 +90,140 @@
     font-size: 12px;
     margin-top: 64px;
 }
+
+.bottom-footer__mobile-menu{
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.bottom-footer__mobile-menu-item{}
+.bottom-footer__mobile-menu-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.bottom-footer__mobile-menu-icon{
+    width: 24px;
+    height: 24px;
+}
+.bottom-footer__mobile-menu-name{
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width:1200px) {
+    .bottom-footer__menus {
+        gap: 80px;
+    }
+}
+
+@media (max-width:992px) {
+    .bottom-footer__menus {
+        gap: 40px;
+    }
+
+    .menu-customme__title,
+    .menu-customers__title,
+    .menu-guide__title {
+        font-size: 12px;
+    }
+
+    .menu-customme__items,
+    .menu-customers__items,
+    .menu-guide__items {
+        font-size: 12px;
+    }
+
+    .bootom-footer__info {
+        gap: 40px;
+    }
+
+    .bootom-footer__title {
+        font-size: 16px;
+    }
+
+    .bootom-footer__support {
+        gap: 24px;
+    }
+}
+
+@media (max-width:768px) {
+    .bottom-footer__content {
+        gap: 24px;
+    }
+
+    .bottom-footer__menus {
+        gap: 24px;
+    }
+
+    .menu-customme,
+    .menu-customers,
+    .menu-guide {
+        gap: 16px;
+    }
+
+    .menu-customme__title,
+    .menu-customers__title,
+    .menu-guide__title {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .menu-customme__items,
+    .menu-customers__items,
+    .menu-guide__items {
+        font-size: 10px;
+    }
+
+    .bootom-footer__info {
+        gap: 32px;
+    }
+
+    .bootom-footer__title {
+        font-size: 14px;
+    }
+
+    .bootom-footer__support {
+        gap: 8px;
+    }
+
+    .bootom-footer__support-content,
+    .bootom-footer__support-time {
+        font-size: 10px;
+    }
+
+    .bootom-footer__licenses {
+        gap: 24px;
+    }
+
+    .bootom-footer__license {
+        width: 40px;
+        height: 48px;
+    }
+
+    .bootom-footer__copy {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width:576px) {
+    .bottom-footer {
+        padding: 0;
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .bottom-footer__content,
+    .bootom-footer__copy {
+        display: none;
+    }
+
+    .bottom-footer__mobile-menu{
+        display: flex;
+    }
+}
+
+@media (max-width:360px) {}
