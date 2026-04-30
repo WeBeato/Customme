@@ -126,6 +126,7 @@ export function renderBottomFooter() {
     bottomFooterContainer.appendChild(bottomFooterWrap);
 
     bottomFooterWrap.appendChild(bottomFooterContent);
+    bottomFooterWrap.appendChild(bottomFooterCopy);
 
     bottomFooterContent.appendChild(bottomFooterMenus);
     bottomFooterContent.appendChild(bottomFooterInfo);
